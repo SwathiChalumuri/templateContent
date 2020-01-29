@@ -1,0 +1,8 @@
+<div *ngFor = "let s of strArray">
+    <div *ngIf = "s == str; else reUse">
+        same
+    </div>
+</div>
+<ng-template #reUse>
+    different
+</ng-template>

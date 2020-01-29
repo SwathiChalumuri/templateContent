@@ -1,0 +1,58 @@
+<!-- <ng-template>
+    <p>nothing displayed as there is no structural diectives </p>
+</ng-template> -->
+
+
+
+
+<!-- <ng-template [ngIf] = "bool" >bool is true</ng-template> -->
+
+
+
+
+<!-- <div  *ngIf = "divElem ; else myTemp">
+    this is ng-template
+</div>
+<ng-template #myTemp>this is template </ng-template> -->
+
+
+
+
+<!-- <div *ngFor = "let a of arr; let i=index">
+    {{a}}
+</div>
+<ng-template ngFor let-a [ngForOf] = "arr" let i="index">
+    <p>index: {{i}}. {{a}}</p>
+</ng-template> -->
+
+
+
+
+<!-- <ng-template ngIf="bool" ngIfElse="template2">
+    template 1
+ </ng-template>
+ 
+ 
+ <ng-template #template2> 
+     template 2
+ </ng-template> -->
+
+ 
+
+
+
+<div  *ngIf = "bool ; then template1 else template2">
+    this is ng-template
+</div>
+
+<ng-template [ngIf]="bool" [ngIfElse]="template2" #template1>
+   template 1
+</ng-template>
+
+
+<ng-template #template2> 
+    template 2
+</ng-template>
+
+
+

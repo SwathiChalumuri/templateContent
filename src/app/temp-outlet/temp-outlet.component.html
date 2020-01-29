@@ -1,0 +1,13 @@
+<p>Dynamically render template and reuseing template</p>
+
+<div>
+    <ng-container *ngTemplateOutlet = "templatee"></ng-container>
+</div>
+
+<div>
+    <ng-container *ngTemplateOutlet = "templatee"></ng-container>
+</div>
+
+<ng-template #templatee>
+    <p>common data to ng-containers above</p>
+</ng-template>
